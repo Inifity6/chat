@@ -4,7 +4,7 @@
   const user = resp.data;
   if (!user) {
     alert("未登录或登录已过期，请重新登录");
-    location.href = "/html/login.html";
+    location.href = `${basURL}login.html`;
     return;
   }
 
@@ -41,7 +41,7 @@
   //退出登录事件
   doms.close.onclick = function () {
     API.loginOut();
-    location.href = "/html/login.html";
+    location.href = `${basURL}login.html`;
   };
 
   /**

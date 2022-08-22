@@ -7,3 +7,4 @@ function $$(selector) {
 function $$$(element) {
   return document.createElement(element);
 }
+const basURL = "/chat/";

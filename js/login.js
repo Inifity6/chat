@@ -24,7 +24,7 @@ form.onsubmit = async function (e) {
   const data = Object.fromEntries(formData.entries());
   const resp = await API.login(data);
   if (resp.code === 0) {
-    location.href = "/html/index.html";
+    location.href = `${basURL}index.html`;
   } else {
     loginIdValidator.p.innerText = "账号或密码错误";
     loginPwdValidator.input.value = "";
