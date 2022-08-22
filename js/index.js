@@ -64,7 +64,7 @@
     }
     const img = $$$("img");
     img.className = "chat-avatar";
-    img.src = chatInfo.from ? "/asset/avatar.png" : "/asset/robot-avatar.jpg";
+    img.src = chatInfo.from ? "./asset/avatar.png" : "./asset/robot-avatar.jpg";
     const content = $$$("div");
     content.className = "chat-content";
     content.innerText = chatInfo.content;
